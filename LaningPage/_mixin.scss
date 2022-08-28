@@ -1,0 +1,13 @@
+@mixin top {
+  position: relative;
+  opacity: 0;
+  top: -0.6rem;
+}
+
+@mixin visible {
+  position: relative;
+  opacity: 1;
+  top: 0.0625rem;
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+}

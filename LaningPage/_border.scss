@@ -1,0 +1,24 @@
+@import "./mixin";
+@import "./variables";
+
+//border
+#border{
+  min-width: 46.375rem;
+  height: 0.0625rem;
+  @include top;
+  border-bottom: $dotted-border;
+  margin: 0.0625rem 0;
+
+  &.visible{
+    @include visible;
+    transition-delay: 2s;
+  }
+
+  #border-bar{
+    width: 0%;
+  //  height: 100%;
+    border-bottom: 0.125rem dotted #ff0000ff;
+    //position: absolute;
+    //z-index: 1;
+  }
+}

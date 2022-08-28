@@ -1,0 +1,69 @@
+@import "./mixin";
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  height: 100vh;
+  padding: 0 10rem;
+  font-size: 16px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+#body-wrap{
+  max-width: 72.5rem;
+  margin: 0 auto;
+}
+
+@import "./background";
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+header, div#border, main, section {
+  min-width: 59.625rem;
+}
+
+.scrollable {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background-color: #aaa;
+  }
+}
+
+.article-wrap {
+  min-width: 36rem;
+  height: 100%;
+}
+
+@import "./header", "./border", "./mainTag";

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DevUniverse</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer src="resources/script/index.js"></script>
+</head>
+<body>
+<div id="body-wrap">
+    <!--백그라운드-->
+    <div id="background">
+        <div id="back-cover"></div>
+        <video src="resources/videos/video2.mp4" muted autoplay loop></video>
+    </div>
+    <!--헤더-->
+    <header>
+        <h1 id="logo">DevLog</h1>
+        <nav>
+            <ul>
+                <li class="lis">
+                    <a class="nav-a selected" href="#" target="_self" data-num="0">Main</a>
+                </li>
+                <li class="lis">
+                    <a class="nav-a" href="#" target="_self" data-num="1">Skills</a>
+                </li>
+                <li class="lis">
+                    <a class="nav-a" href="#" target="_self" data-num="2">Portfolio</a>
+                </li>
+                <li class="lis">
+                    <a class="nav-a" href="#" target="_self" data-num="3">Intro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--보더-->
+    <div id="border">
+        <div id="border-bar"></div>
+    </div>
+    <!--메인-->
+    <main>
+        <!--    메인섹션-->
+        <section id="main" class="selected">
+            <h1>Main</h1>
+            <article>
+                <div>
+                    <p>안녕하세요. 프론트엔드 개발자 DevLog입니다.<br>
+                        사용 가능한 기술들(Skills)과 포트폴리오, 그리고 개발자의 소개를 간단히 기재한 LandingPage입니다.<br><br>
+                        HTML과 CSS의 상위버전격인 SCSS를 사용하였고, 슬라이드 기능을 제공하는 라이브러리 없이 <br>
+                        Vanilla(순수) JavaScript로 직접 개발했습니다.</p>
+                    <p>>상단 <b>메뉴 클릭</b> 또는 <b>마우스 휠</b>을 통해 움직일 수 있습니다.</p>
+                </div>
+            </article>
+        </section>
+        <!--    스킬섹션-->
+        <section id="skills">
+            <h1>Skills</h1>
+            <article>
+                <ul>
+                    <li><a>HTML</a></li>
+                    <li><a>CSS</a></li>
+                    <li><a>SCSS</a></li>
+                    <li><a>JavaScript</a></li>
+                    <li><a>JQuery</a></li>
+                    <li><a>React</a></li>
+                    <li><a>TypeScript</a></li>
+                </ul>
+                <ul>
+                    <li><a>Node.js</a></li>
+                    <li><a>Express</a></li>
+                    <li><a>MySQL</a></li>
+                    <li><a>MongoDB</a></li>
+                </ul>
+            </article>
+        </section>
+        <!--    포폴섹션-->
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <article>
+                <div class="article-wrap">
+                    <div id="wrap-port" class="scrollable">
+                        <div class="port">
+                            <img class="port-img" src="resources/images/devlog.png" alt="랜딩페이지">
+                            <div class="describe">
+                                <h3>DevLog</h3>
+                                <p>현재까지 개발한 포트폴리오를 담은 랜딩페이지 입니다.</p>
+                                <div>
+                                    <a class="des-icon" href="https://github.com/loglost/landingpage"><img class="icon-link"
+                                                                      src="./resources/images/github.png"
+                                                                      alt="github">Github 가기</a>
+                                    <a class="des-icon" href="#">사이트 가기</a>
+                                </div>
+                                <p>사용 기술 : HTML, SCSS, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="port">
+                            <img class="port-img" src="resources/images/devlog.png" alt="랜딩페이지">
+                            <div class="describe">
+                                <h3>DevLog</h3>
+                                <p>현재까지 개발한 포트폴리오를 담은 페이지입니다</p>
+                                <div>
+                                    <a class="des-icon" href="#"><img class="icon-link"
+                                                                      src="./resources/images/github.png"
+                                                                      alt="github">Github 가기</a>
+                                    <a class="des-icon" href="#">사이트 가기</a>
+                                </div>
+                                <p>사용 기술 : HTML, SCSS, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="port">
+                            <img class="port-img" src="resources/images/devlog.png" alt="랜딩페이지">
+                            <div class="describe">
+                                <h3>DevLog</h3>
+                                <p>현재까지 개발한 포트폴리오를 담은 페이지입니다</p>
+                                <div>
+                                    <a class="des-icon" href="#"><img class="icon-link"
+                                                                      src="./resources/images/github.png"
+                                                                      alt="github">Github 가기</a>
+                                    <a class="des-icon" href="#">사이트 가기</a>
+                                </div>
+                                <p>사용 기술 : HTML, SCSS, JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--    인트로섹션-->
+        <section id="intro">
+            <h1>Intro</h1>
+            <article>
+                <img id="myPic" src="" alt="내사진">
+                <div class="article-wrap">
+                    <div class="scrollable">
+                        <h3>개발자 소개</h3>
+                        <p>적성에 맞는 일을 찾아 방황하길 오랜시간이 지났습니다.<br><br>
+                            적성을 찾기에는 늦었다고 생각하고 있을때 사실 개발에 관해서는<br>
+                            저와는 완전히 다른 길이라 생각했고, 생각지도 못했던 분야였습니다. <br><br>
+                            혹시나 하는 마음에 개발에 한 발 들여 공부하기 시작한 것이 계기였고, <br>
+                            비록 공부 수준이지만 이전과는 달리 오직 개발에만 집중하고<br>
+                            있다는 것을 깨닫고 제 적성이라 생각했습니다.<br>
+                            굳이 말하자면 결과물이 비교적 빠르고 한 눈에 보인다는 점이<br>
+                            저와 맞지 않았나 싶습니다.<br><br>
+                            새로운 것을 배우며 공부하는 것은 항상 힘들고 지치지만<br>
+                            그걸 해냈을 때 느끼는 소소한 뿌듯함이 공부하는 즐거움 인 듯 합니다.<br><br>
+                            늘 부족한 실력을 높이기 위해 공부하며 작업하고 있습니다.</p>
+                        <div>
+                            <a class="velog" target="_blank" href="https://velog.io/@loglost">
+                                <img src="resources/images/velog.jpg" alt="velog">Velog 가기
+                            </a>
+                            <a>Email : </a>
+                            <a><b>아래 개인 번호는, 모르는 번호는 받지 않으니 어디 신지 남겨주시길 부탁드립니다. 확인하는 대로 바로 연락 드리겠습니다.</b></a>
+                            <a>Phone : </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</div>
+</body>
+</html>
